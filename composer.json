@@ -1,0 +1,50 @@
+{
+    "name": "lakion/lionframe",
+    "license": "MIT",
+    "type": "project",
+    "description": "Symfony RAD API Edition for powerful REST applications.",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.4",
+
+        "sylius/resource-bundle":               "0.13.*@dev",
+        "sylius/resource":                      "0.13.*@dev",
+        "sylius/storage":                       "0.13.*@dev",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "sensio/distribution-bundle":           "2.3.*",
+        "friendsofsymfony/rest-bundle":         "1.5.*@dev",
+        "sensio/generator-bundle":              "~2.3",
+        "symfony/symfony":                      "~2.3",
+        "symfony/monolog-bundle":               "~2.3",
+        "doctrine/orm":                         "~2.3"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

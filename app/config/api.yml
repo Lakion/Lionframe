@@ -1,0 +1,16 @@
+sylius_resource:
+    resources:
+        acme.post:
+            driver: doctrine/orm
+            classes:
+                model: Acme\DemoBundle\Entity\Post
+
+fos_rest:
+    disable_csrf_role: ROLE_API
+    view:
+        formats:
+            json: true
+            xml:  true
+    format_listener:
+        rules:
+            - { path: '^/', priorities: ['json', 'xml'], fallback_format: json, prefer_extension: true }
