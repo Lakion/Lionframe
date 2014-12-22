@@ -20,6 +20,8 @@ Then, use the `create-project` command to generate a new Lionframe application:
 Composer will install Lionframe and all its dependencies under the
 `path/to/install` directory.
 
+If you encounter any problem with installing the dependencies, just go to project root and run the following command:
+
     php composer.phar install
 
 2) Checking your System Configuration
