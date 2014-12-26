@@ -1,0 +1,3 @@
+post_api:
+    type: sylius.api
+    resource: acme.post
