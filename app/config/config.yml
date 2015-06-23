@@ -41,15 +41,7 @@ doctrine:
         auto_mapping: true
 
 sylius_translation:
-    default_mapping:
-        translatable:
-            field: translations
-            currentLocale: currentLocale
-            fallbackLocale: fallbackLocale
-        translation:
-            field: translatable
-            locale: locale
+    default_locale: %locale%
 
 parameters:
-    sylius.translation.mapping: %sylius.translation.default.mapping%
-    sylius.locale: %locale%
+    sylius.translation.mapping: {}
