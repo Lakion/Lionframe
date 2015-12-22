@@ -22,6 +22,10 @@
         "symfony/monolog-bundle":               "~2.3",
         "doctrine/orm":                         "~2.3"
     },
+    "require-dev": {
+        "lakion/api-test-case": "^1.0@dev",
+        "coduo/php-matcher": "^2.1@dev"
+    },
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
