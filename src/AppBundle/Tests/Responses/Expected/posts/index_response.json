@@ -1,0 +1,36 @@
+{
+    "page": 1,
+    "limit": 10,
+    "pages": 1,
+    "total": 3,
+    "_links": {
+        "self": {
+            "href": "\/posts\/?page=1&limit=10"
+        },
+        "first": {
+            "href": "\/posts\/?page=1&limit=10"
+        },
+        "last": {
+            "href": "\/posts\/?page=1&limit=10"
+        }
+    },
+    "_embedded": {
+        "items": [
+            {
+                "id": @integer@,
+                "title": "Clean Code principles",
+                "author": "Robert C. Martin"
+            },
+            {
+                "id": @integer@,
+                "title": "TDD in practice",
+                "author": "Łukasz A. Chruściel"
+            },
+            {
+                "id": @integer@,
+                "title": "Magic of OpenSource",
+                "author": "Łukasz A. Chruściel"
+            }
+        ]
+    }
+}

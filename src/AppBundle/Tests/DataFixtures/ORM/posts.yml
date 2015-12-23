@@ -1,0 +1,10 @@
+AppBundle\Entity\Post:
+    post1:
+        title: 'Clean Code principles'
+        author: 'Robert C. Martin'
+    post2:
+        title: 'TDD in practice'
+        author: 'Łukasz A. Chruściel'
+    post3:
+        title: 'Magic of OpenSource'
+        author: 'Łukasz A. Chruściel'
