@@ -7,13 +7,10 @@
         "psr-4": { "": "src/" }
     },
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.5",
 
-        "sylius/resource-bundle":               "0.14.*@dev",
-        "sylius/resource":                      "0.14.*@dev",
-        "sylius/translation-bundle":            "0.14.*@dev",
-        "sylius/translation":                   "0.14.*@dev",
-        "sylius/storage":                       "0.14.*@dev",
+        "sylius/resource-bundle":               "0.15.*@dev",
+        "sylius/resource":                      "0.15.*@dev",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/distribution-bundle":           "2.3.*",
         "friendsofsymfony/rest-bundle":         "1.5.*@dev",

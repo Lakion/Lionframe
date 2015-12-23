@@ -11,7 +11,6 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            new Sylius\Bundle\TranslationBundle\SyliusTranslationBundle(),
             new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
