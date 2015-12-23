@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7b150af8a866e61697ca12143d6d73b7",
-    "content-hash": "9add0f5e0f86e54e6bde02c8cf84228e",
+    "hash": "688613ef43f88862c4bdf12530e145ca",
+    "content-hash": "d9e628314522196355e8eddb6742ad74",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -4320,8 +4320,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sylius/resource-bundle": 20,
-        "sylius/resource": 20,
         "friendsofsymfony/rest-bundle": 20,
         "lakion/api-test-case": 20,
         "coduo/php-matcher": 20
