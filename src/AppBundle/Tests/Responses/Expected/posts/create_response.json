@@ -1,0 +1,5 @@
+{
+    "id": @integer@,
+    "title": "Easy API testing with ApiTestCase",
+    "author": "Łukasz A. Chruściel"
+}
