@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new AppBundle\AppBundle(),
+            new DemoBundle\DemoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

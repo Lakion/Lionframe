@@ -3,7 +3,7 @@ sylius_resource:
         acme.post:
             driver: doctrine/orm
             classes:
-                model: AppBundle\Entity\Post
+                model: DemoBundle\Entity\Post
 
 fos_rest:
     disable_csrf_role: ROLE_API

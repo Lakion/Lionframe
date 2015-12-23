@@ -1,4 +1,4 @@
-AppBundle\Entity\Post:
+DemoBundle\Entity\Post:
     post1:
         title: 'Clean Code principles'
         author: 'Robert C. Martin'
