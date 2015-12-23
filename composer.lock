@@ -1,51 +1,12 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "65e8f252667b9100c6a7d1c5d5505849",
+    "hash": "23d8d54e5a70d954bdb8495b24203a43",
+    "content-hash": "9add0f5e0f86e54e6bde02c8cf84228e",
     "packages": [
-        {
-            "name": "behat/transliterator",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/Transliterator.git",
-                "reference": "868e05be3a9f25ba6424c2dd4849567f50715003"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/868e05be3a9f25ba6424c2dd4849567f50715003",
-                "reference": "868e05be3a9f25ba6424c2dd4849567f50715003",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Transliterator": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Artistic-1.0"
-            ],
-            "description": "String transliterator",
-            "keywords": [
-                "i18n",
-                "slug",
-                "transliterator"
-            ],
-            "time": "2015-09-28 16:26:35"
-        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
@@ -890,85 +851,6 @@
             "time": "2015-02-16 15:26:12"
         },
         {
-            "name": "gedmo/doctrine-extensions",
-            "version": "v2.4.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
-                "reference": "04ac4d1cdbdc610816562344c7ed74aecf2cd1ca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/04ac4d1cdbdc610816562344c7ed74aecf2cd1ca",
-                "reference": "04ac4d1cdbdc610816562344c7ed74aecf2cd1ca",
-                "shasum": ""
-            },
-            "require": {
-                "behat/transliterator": "~1.0",
-                "doctrine/common": "~2.4",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "doctrine/common": ">=2.5.0",
-                "doctrine/mongodb-odm": ">=1.0.2",
-                "doctrine/orm": ">=2.5.0",
-                "phpunit/phpunit": "~4.4",
-                "phpunit/phpunit-mock-objects": "~2.3",
-                "symfony/yaml": "~2.6"
-            },
-            "suggest": {
-                "doctrine/mongodb-odm": "to use the extensions with the MongoDB ODM",
-                "doctrine/orm": "to use the extensions with the ORM"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Gedmo\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Buchmann",
-                    "email": "david@liip.ch"
-                },
-                {
-                    "name": "Gediminas Morkevicius",
-                    "email": "gediminas.morkevicius@gmail.com"
-                },
-                {
-                    "name": "Gustavo Falco",
-                    "email": "comfortablynumb84@gmail.com"
-                }
-            ],
-            "description": "Doctrine2 behavioral extensions",
-            "homepage": "http://gediminasm.org/",
-            "keywords": [
-                "Blameable",
-                "behaviors",
-                "doctrine2",
-                "extensions",
-                "gedmo",
-                "loggable",
-                "nestedset",
-                "sluggable",
-                "sortable",
-                "timestampable",
-                "translatable",
-                "tree",
-                "uploadable"
-            ],
-            "time": "2015-11-30 18:58:48"
-        },
-        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -1763,78 +1645,17 @@
             "time": "2015-03-17 06:36:52"
         },
         {
-            "name": "stof/doctrine-extensions-bundle",
-            "version": "v1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
-                "reference": "7b3144572617b0555f9a443317dbc2f9cf5b524e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/7b3144572617b0555f9a443317dbc2f9cf5b524e",
-                "reference": "7b3144572617b0555f9a443317dbc2f9cf5b524e",
-                "shasum": ""
-            },
-            "require": {
-                "gedmo/doctrine-extensions": "^2.3.1",
-                "php": ">=5.3.2",
-                "symfony/framework-bundle": "~2.1"
-            },
-            "suggest": {
-                "doctrine/doctrine-bundle": "to use the ORM extensions",
-                "doctrine/mongodb-odm-bundle": "to use the MongoDB ODM extensions"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Stof\\DoctrineExtensionsBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christophe Coevoet",
-                    "email": "stof@notk.org"
-                }
-            ],
-            "description": "Integration of the gedmo/doctrine-extensions with Symfony2",
-            "homepage": "https://github.com/stof/StofDoctrineExtensionsBundle",
-            "keywords": [
-                "behaviors",
-                "doctrine2",
-                "extensions",
-                "gedmo",
-                "loggable",
-                "nestedset",
-                "sluggable",
-                "sortable",
-                "timestampable",
-                "translatable",
-                "tree"
-            ],
-            "time": "2015-08-12 16:23:48"
-        },
-        {
             "name": "sylius/resource",
-            "version": "v0.14.0",
+            "version": "v0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Resource.git",
-                "reference": "961e9c6214060be344fd32ecfdd79294e96d6717"
+                "reference": "38542753aee7f28c4e4692198f2ffa3a15b587ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Resource/zipball/961e9c6214060be344fd32ecfdd79294e96d6717",
-                "reference": "961e9c6214060be344fd32ecfdd79294e96d6717",
+                "url": "https://api.github.com/repos/Sylius/Resource/zipball/38542753aee7f28c4e4692198f2ffa3a15b587ca",
+                "reference": "38542753aee7f28c4e4692198f2ffa3a15b587ca",
                 "shasum": ""
             },
             "require": {
@@ -1850,7 +1671,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.14-dev"
+                    "dev-master": "0.15-dev"
                 }
             },
             "autoload": {
@@ -1886,20 +1707,20 @@
                 "shop",
                 "sylius"
             ],
-            "time": "2015-04-15 09:33:03"
+            "time": "2015-08-13 11:52:46"
         },
         {
             "name": "sylius/resource-bundle",
-            "version": "v0.14.0",
+            "version": "v0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusResourceBundle.git",
-                "reference": "8f1848dc44c6989fbe7afea2bce50de4d18dcfac"
+                "reference": "7c8191c9c171a904b19293d081a47c5b90dfa4b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusResourceBundle/zipball/8f1848dc44c6989fbe7afea2bce50de4d18dcfac",
-                "reference": "8f1848dc44c6989fbe7afea2bce50de4d18dcfac",
+                "url": "https://api.github.com/repos/Sylius/SyliusResourceBundle/zipball/7c8191c9c171a904b19293d081a47c5b90dfa4b7",
+                "reference": "7c8191c9c171a904b19293d081a47c5b90dfa4b7",
                 "shasum": ""
             },
             "require": {
@@ -1907,8 +1728,8 @@
                 "friendsofsymfony/rest-bundle": "~1.5",
                 "jms/serializer-bundle": "~0.13",
                 "php": ">=5.3.9",
-                "sylius/resource": "0.14.*@dev",
-                "sylius/storage": "0.14.*@dev",
+                "sylius/resource": "0.15.*@dev",
+                "sylius/storage": "0.15.*@dev",
                 "symfony/expression-language": "~2.4",
                 "symfony/form": "~2.3",
                 "symfony/framework-bundle": "~2.3",
@@ -1921,21 +1742,21 @@
                 "doctrine/orm": "~2.4",
                 "doctrine/phpcr-bundle": "~1.1",
                 "phpspec/phpspec": "~2.1",
-                "sylius/rbac-bundle": "0.14.*@dev",
-                "sylius/translation-bundle": "0.14.*@dev",
+                "sylius/rbac-bundle": "0.15.*@dev",
+                "sylius/translation-bundle": "0.15.*@dev",
                 "twig/twig": "~1.11"
             },
             "suggest": {
                 "doctrine/mongodb-odm": "1.0.*@dev",
                 "doctrine/orm": "~2.4",
                 "doctrine/phpcr-bundle": "~1.1",
-                "sylius/rbac-bundle": "0.14.*@dev",
-                "sylius/translation-bundle": "0.14.*@dev"
+                "sylius/rbac-bundle": "0.15.*@dev",
+                "sylius/translation-bundle": "0.15.*@dev"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.14-dev"
+                    "dev-master": "0.15-dev"
                 }
             },
             "autoload": {
@@ -1969,20 +1790,20 @@
                 "storage",
                 "sylius"
             ],
-            "time": "2015-05-20 14:49:54"
+            "time": "2015-09-01 09:06:35"
         },
         {
             "name": "sylius/storage",
-            "version": "v0.14.0",
+            "version": "v0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Storage.git",
-                "reference": "44218b39a7740c91ca6fad3b9007d27d1bbdf27d"
+                "reference": "79779ce0a7c63fe3ec87451fdbc4c1e5a760950c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Storage/zipball/44218b39a7740c91ca6fad3b9007d27d1bbdf27d",
-                "reference": "44218b39a7740c91ca6fad3b9007d27d1bbdf27d",
+                "url": "https://api.github.com/repos/Sylius/Storage/zipball/79779ce0a7c63fe3ec87451fdbc4c1e5a760950c",
+                "reference": "79779ce0a7c63fe3ec87451fdbc4c1e5a760950c",
                 "shasum": ""
             },
             "require": {
@@ -1996,7 +1817,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.14-dev"
+                    "dev-master": "0.15-dev"
                 }
             },
             "autoload": {
@@ -2027,133 +1848,7 @@
             "keywords": [
                 "storage"
             ],
-            "time": "2015-02-09 14:26:00"
-        },
-        {
-            "name": "sylius/translation",
-            "version": "v0.14.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Sylius/Translation.git",
-                "reference": "1cd7569223bd2293c374718bf4103948ac369e27"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Translation/zipball/1cd7569223bd2293c374718bf4103948ac369e27",
-                "reference": "1cd7569223bd2293c374718bf4103948ac369e27",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/collections": "~1.2",
-                "php": ">=5.3.3",
-                "sylius/resource": "0.14.*@dev"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.14-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sylius\\Component\\Translation\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sylius project",
-                    "homepage": "http://sylius.org"
-                },
-                {
-                    "name": "Community contributions",
-                    "homepage": "http://github.com/Sylius/Sylius/contributors"
-                },
-                {
-                    "name": "Paweł Jędrzejewski",
-                    "homepage": "http://pjedrzejewski.com"
-                }
-            ],
-            "description": "Translation component for translatable resources.",
-            "homepage": "http://sylius.org",
-            "keywords": [
-                "ecommerce",
-                "resource",
-                "sylius",
-                "translatable",
-                "translation"
-            ],
-            "time": "2015-03-28 09:03:20"
-        },
-        {
-            "name": "sylius/translation-bundle",
-            "version": "v0.14.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Sylius/SyliusTranslationBundle.git",
-                "reference": "0166e1e59216b0fec45cecfa98f0a356fe170f63"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusTranslationBundle/zipball/0166e1e59216b0fec45cecfa98f0a356fe170f63",
-                "reference": "0166e1e59216b0fec45cecfa98f0a356fe170f63",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "stof/doctrine-extensions-bundle": "~1.1",
-                "sylius/resource-bundle": "0.14.*@dev",
-                "sylius/translation": "0.14.*@dev",
-                "symfony/framework-bundle": "~2.3"
-            },
-            "require-dev": {
-                "doctrine/orm": "~2.2",
-                "phpspec/phpspec": "~2.1",
-                "symfony/form": "~2.3",
-                "symfony/validator": "~2.3"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.14-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sylius\\Bundle\\TranslationBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sylius project",
-                    "homepage": "http://sylius.org"
-                },
-                {
-                    "name": "Community contributions",
-                    "homepage": "http://github.com/Sylius/Sylius/contributors"
-                },
-                {
-                    "name": "Paweł Jędrzejewski",
-                    "homepage": "http://pjedrzejewski.com"
-                }
-            ],
-            "description": "Sylius translation bundle",
-            "homepage": "http://sylius.org",
-            "keywords": [
-                "sylius",
-                "translation"
-            ],
-            "time": "2015-05-19 21:49:27"
+            "time": "2015-06-23 08:19:45"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -3444,12 +3139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lakion/ApiTestCase.git",
-                "reference": "0dc174d0bdf386c074e50dd870712c788694ccf1"
+                "reference": "466bd22a228c96a2dba971045ac8c0b0400df6d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lakion/ApiTestCase/zipball/0dc174d0bdf386c074e50dd870712c788694ccf1",
-                "reference": "0dc174d0bdf386c074e50dd870712c788694ccf1",
+                "url": "https://api.github.com/repos/Lakion/ApiTestCase/zipball/466bd22a228c96a2dba971045ac8c0b0400df6d1",
+                "reference": "466bd22a228c96a2dba971045ac8c0b0400df6d1",
                 "shasum": ""
             },
             "require": {
@@ -3484,19 +3179,24 @@
             ],
             "authors": [
                 {
-                    "name": "Paweł Jędrzejewski",
-                    "homepage": "http://pjedrzejewski.com"
-                },
-                {
                     "name": "Łukasz Chruściel",
                     "email": "lukasz.chrusciel@lakion.com"
                 },
                 {
                     "name": "Michał Marcinkowski",
                     "email": "michal.marcinkowski@lakion.com"
+                },
+                {
+                    "name": "Paweł Jędrzejewski",
+                    "email": "pawel.jedrzejewski@lakion.com",
+                    "homepage": "http://pjedrzejewski.com"
+                },
+                {
+                    "name": "Arkadiusz Krakowiak",
+                    "email": "arkadiusz.krakowiak@lakion.com"
                 }
             ],
-            "description": "Perfect TestCase for JSON API TDD with Symfony.",
+            "description": "Perfect PHPUnit TestCase for JSON/XML API TDD with Symfony.",
             "keywords": [
                 "Symfony2",
                 "TDD",
@@ -3504,10 +3204,11 @@
                 "doctrine",
                 "json",
                 "phpunit",
+                "symfony",
                 "testcase",
                 "xml"
             ],
-            "time": "2015-12-22 09:37:55"
+            "time": "2015-12-23 11:45:48"
         },
         {
             "name": "mockery/mockery",
@@ -4621,9 +4322,6 @@
     "stability-flags": {
         "sylius/resource-bundle": 20,
         "sylius/resource": 20,
-        "sylius/translation-bundle": 20,
-        "sylius/translation": 20,
-        "sylius/storage": 20,
         "friendsofsymfony/rest-bundle": 20,
         "lakion/api-test-case": 20,
         "coduo/php-matcher": 20
@@ -4631,7 +4329,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4"
+        "php": ">=5.5"
     },
     "platform-dev": []
 }
