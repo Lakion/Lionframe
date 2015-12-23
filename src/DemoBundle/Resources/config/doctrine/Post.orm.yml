@@ -1,4 +1,4 @@
-AppBundle\Entity\Post:
+DemoBundle\Entity\Post:
     type: entity
     table: null
     id:
