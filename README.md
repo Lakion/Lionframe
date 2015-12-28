@@ -1,5 +1,6 @@
 Lionframe - Rapid REST API Development
 ======================================
+[![Build Status](https://travis-ci.org/Lakion/Lionframe.svg?branch=v0.3.0)](https://travis-ci.org/Lakion/Lionframe)
 
 Welcome to the Lionframe - Rapid REST API development framework, based on [Symfony](http://symfony.com) & [Sylius](http://sylius.org).
 
