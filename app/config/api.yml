@@ -1,7 +1,6 @@
 sylius_resource:
     resources:
         acme.post:
-            driver: doctrine/orm
             classes:
                 model: DemoBundle\Entity\Post
 
