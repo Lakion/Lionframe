@@ -19,8 +19,8 @@
         "doctrine/orm":                         "~2.3"
     },
     "require-dev": {
-        "lakion/api-test-case": "^1.0@dev",
-        "coduo/php-matcher": "^2.1@dev"
+        "lakion/api-test-case": "^1.0",
+        "coduo/php-matcher": "^2.1"
     },
     "scripts": {
         "post-install-cmd": [
