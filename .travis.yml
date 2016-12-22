@@ -6,7 +6,7 @@ php:
 
 before_script:
     - composer install -n
-    - app/console doctrine:database:create
-    - app/console doctrine:schema:create
+    - bin/console doctrine:database:create
+    - bin/console doctrine:schema:create
 
 script: bin/phpunit
