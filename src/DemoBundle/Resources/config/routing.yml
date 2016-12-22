@@ -1,3 +1,5 @@
 post_api:
-    type: sylius.api
-    resource: acme.post
+    type: sylius.resource_api
+    resource: |
+        alias: acme.post
+        section: api

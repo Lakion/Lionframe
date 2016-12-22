@@ -13,14 +13,18 @@ class AppKernel extends Kernel
         $bundles = array(
             new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new winzou\Bundle\StateMachineBundle\winzouStateMachineBundle(),
+
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
+
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+
             new AppBundle\AppBundle(),
             new DemoBundle\DemoBundle(),
         );
