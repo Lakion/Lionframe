@@ -1,13 +1,28 @@
 language: php
 
+sudo: false
+
+cache:
+    directories:
+        - bin
+        - vendor
+
 php:
   - 5.6
   - 7.0
   - 7.1
 
-before_script:
-    - composer install -n
-    - bin/console doctrine:database:create
-    - bin/console doctrine:schema:create
+before_install:
+    - phpenv config-rm xdebug.ini || true
 
-script: bin/phpunit
+install:
+    - composer install -n
+
+before_script:
+    - bin/console doctrine:database:create -vvv
+    - bin/console doctrine:schema:create -vvv
+
+script:
+    # @TODO Change to composer validate --strict when the beta2 of SyliusResourceBundle will be released 
+    - composer validate
+    - bin/phpunit

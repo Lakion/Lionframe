@@ -4,7 +4,10 @@
     "type": "project",
     "description": "Symfony RAD API Edition for powerful REST applications.",
     "autoload": {
-        "psr-4": { "": "src/" },
+        "psr-4": {
+            "AppBundle\\": "src/AppBundle",
+            "DemoBundle\\": "src/DemoBundle"
+        },
         "classmap": ["app/AppKernel.php", "app/AppCache.php"]
     },
     "require": {
