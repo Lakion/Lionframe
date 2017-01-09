@@ -4,26 +4,26 @@
     "type": "project",
     "description": "Symfony RAD API Edition for powerful REST applications.",
     "autoload": {
-        "psr-4": {
-            "AppBundle\\": "src/AppBundle",
-            "DemoBundle\\": "src/DemoBundle"
-        },
+        "psr-4": { "AppBundle\\": "src/AppBundle"},
         "classmap": ["app/AppKernel.php", "app/AppCache.php"]
+    },
+    "autoload-dev": {
+        "psr-4": { "DemoBundle\\": "src/DemoBundle" }
     },
     "require": {
         "php": "^5.6|^7.0",
 
-        "sylius/resource-bundle": "dev-master",
-        "incenteev/composer-parameter-handler": "~2.0",
+        "doctrine/orm": "^2.3",
         "friendsofsymfony/rest-bundle": "^1.8",
-        "symfony/symfony": "~3.2",
-        "symfony/monolog-bundle": "~2.3",
-        "doctrine/orm": "~2.3"
+        "incenteev/composer-parameter-handler": "^2.0",
+        "sylius/resource-bundle": "dev-master",
+        "symfony/monolog-bundle": "^2.3",
+        "symfony/symfony": "^3.2"
     },
     "require-dev": {
         "coduo/php-matcher": "^2.1",
-        "sensio/distribution-bundle": "^5.0",
         "lakion/api-test-case": "^1.0",
+        "sensio/distribution-bundle": "^5.0",
         "sensio/generator-bundle": "^3.1"
     },
     "scripts": {
