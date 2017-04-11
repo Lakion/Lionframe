@@ -13,14 +13,18 @@ class AppKernel extends Kernel
         $bundles = array(
             new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new winzou\Bundle\StateMachineBundle\winzouStateMachineBundle(),
+
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
+
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+
             new AppBundle\AppBundle(),
             new DemoBundle\DemoBundle(),
         );
@@ -39,18 +43,33 @@ class AppKernel extends Kernel
      */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $rootDir = $this->getRootDir();
+        $loader->load($this->getRootDir() . '/config/config_' . $this->getEnvironment() . '.yml');
 
-        $loader->load($rootDir.'/config/config_'.$this->environment.'.yml');
-
-        if (is_file($file = $rootDir.'/config/config_'.$this->environment.'.local.yml')) {
+        $file = $this->getRootDir() . '/config/config_' . $this->getEnvironment() . '.local.yml';
+        if (is_file($file)) {
             $loader->load($file);
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
+    public function getCacheDir()
+    {
+        return dirname($this->getRootDir()) . '/var/cache/' . $this->getEnvironment();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getLogDir()
+    {
+        return dirname($this->getRootDir()) . '/var/logs';
+    }
+
     protected function getContainerBaseClass()
     {
-        if ('test' === $this->environment) {
+        if ('test' === $this->getEnvironment()) {
             return '\PSS\SymfonyMockerContainer\DependencyInjection\MockerContainer';
         }
 
