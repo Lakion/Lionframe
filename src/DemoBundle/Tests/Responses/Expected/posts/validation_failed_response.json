@@ -1,18 +1,14 @@
 {
-    "code": 400,
-    "message": "Validation Failed",
-    "errors": {
-        "children": {
-            "title": {
-                "errors": [
-                    "This value should not be blank."
-                ]
-            },
-            "author": {
-                "errors": [
-                    "This value should not be blank."
-                ]
-            }
+    "children": {
+        "title": {
+            "errors": [
+                "This value should not be blank."
+            ]
+        },
+        "author": {
+            "errors": [
+                "This value should not be blank."
+            ]
         }
     }
 }
