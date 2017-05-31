@@ -16,7 +16,7 @@
         "doctrine/orm": "^2.5",
         "friendsofsymfony/rest-bundle": "^2.1",
         "incenteev/composer-parameter-handler": "^2.1",
-        "sylius/resource-bundle": "^1.0.0-beta.2",
+        "sylius/resource-bundle": "1.0.0-beta.2",
         "symfony/monolog-bundle": "^3.0",
         "symfony/symfony": "^3.2"
     },

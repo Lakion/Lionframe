@@ -23,6 +23,6 @@ before_script:
     - bin/console doctrine:schema:create -vvv
 
 script:
-    # @TODO Change to composer validate --strict when the beta2 of SyliusResourceBundle will be released 
+    # @TODO Change to composer validate --strict when the 1.0.0 of SyliusResourceBundle will be released
     - composer validate
     - bin/phpunit
