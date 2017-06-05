@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a169b8dd6ceb69732b2333bf925a433",
-    "content-hash": "73b4cb1915322586d412280f92151ce8",
+    "hash": "a01faaca520c0fae8bf7a3bc28c07fad",
+    "content-hash": "1889a155ec15ae3e79daf827826cedb0",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2117,16 +2117,16 @@
         },
         {
             "name": "sylius/resource-bundle",
-            "version": "v1.0.0-beta.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusResourceBundle.git",
-                "reference": "932044d164e2a6555ca6557c40f60826b09405f8"
+                "reference": "f069330b4a71eda0fb4d368e3c3ac2816a77b3b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusResourceBundle/zipball/932044d164e2a6555ca6557c40f60826b09405f8",
-                "reference": "932044d164e2a6555ca6557c40f60826b09405f8",
+                "url": "https://api.github.com/repos/Sylius/SyliusResourceBundle/zipball/f069330b4a71eda0fb4d368e3c3ac2816a77b3b9",
+                "reference": "f069330b4a71eda0fb4d368e3c3ac2816a77b3b9",
                 "shasum": ""
             },
             "require": {
@@ -2211,7 +2211,7 @@
                 "storage",
                 "sylius"
             ],
-            "time": "2017-04-11 12:46:23"
+            "time": "2017-05-18 13:38:27"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -5211,7 +5211,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "sylius/resource-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
